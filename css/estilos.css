@@ -2,3 +2,31 @@ body
 {
 	background: url(../img/fondo.jpg);
 }
+
+header
+{
+	background: white;
+	text-align: center;
+	width: 95%;
+	margin: auto;
+}
+
+header nav ul 
+{
+	overflow: hidden;
+	list-style: none;
+	background: navy;
+}
+
+header nav ul li 
+{
+	float: left;
+}
+
+header nav ul li a 
+{
+	display: block;
+	text-decoration: none;
+	color: white;
+	margin: .5em;
+}
