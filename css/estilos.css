@@ -16,6 +16,7 @@ header nav ul
 	overflow: hidden;
 	list-style: none;
 	background: navy;
+	height: 3em;
 }
 
 header nav ul li 
@@ -28,5 +29,19 @@ header nav ul li a
 	display: block;
 	text-decoration: none;
 	color: white;
-	margin: .5em;
+	margin: 1em .5em;
+}
+
+header nav ul li a:hover
+{
+	color: red;
+}
+
+section
+{
+	background: url(../img/background.jpg);
+	width: 95%;
+	margin: auto;
+	min-height: 600px;
+	padding: 1em;
 }
