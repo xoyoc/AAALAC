@@ -21,6 +21,7 @@ header nav ul
 
 header nav ul li 
 {
+	border: .1em solid white;
 	float: left;
 }
 
@@ -43,5 +44,5 @@ section
 	width: 95%;
 	margin: auto;
 	min-height: 600px;
-	padding: 1em;
+	padding: 1em 0;
 }
