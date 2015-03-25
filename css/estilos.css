@@ -53,3 +53,8 @@ section
 	min-height: 600px;
 	padding: 1em 0;
 }
+
+footer span 
+{
+	font-size: 1em;
+}
