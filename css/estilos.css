@@ -21,6 +21,7 @@ header nav ul
 
 header nav ul li 
 {
+	border-right: solid white;
 	float: left;
 }
 header nav ul li:first-child
