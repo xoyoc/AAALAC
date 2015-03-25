@@ -54,7 +54,19 @@ section
 	padding: 1em 0;
 }
 
-footer span 
+footer
 {
-	font-size: 3em;
+	background: green;
+	width: 95%;
+	margin: auto;
+}
+
+footer address
+{
+	width: 30%;
+}
+
+.icono 
+{
+	font-size: 2.5em;
 }
