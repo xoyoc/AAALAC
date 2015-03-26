@@ -59,7 +59,8 @@ footer
 	width: 95%;
 	margin: auto;
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
+	align-items:center;
 }
 	footer a 
 	{
