@@ -15,7 +15,7 @@ header nav ul
 {
 	overflow: hidden;
 	list-style: none;
-	background: navy;
+	background: rgba(3, 43, 104, 1);
 	height: 3em;
 }
 
@@ -54,16 +54,37 @@ section
 	padding: 1em 0;
 }
 
-footer
+footer a 
 {
-	background: green;
-	width: 95%;
-	margin: auto;
+	color: black;
+	text-decoration: none;
+}
+
+#panel_redessociales
+{
+	float: right;
+	margin-right: 3em;
+}
+
+#panel_link
+{
+	margin-left: 3em;
+	float: left;
 }
 
 footer address
 {
-	width: 30%;
+	width: 20%;
+	float: left;
+	margin-left: 3em;
+}
+
+footer
+{
+	background: rgba(151, 155, 158, 0.8);
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
 }
 
 .icono 
