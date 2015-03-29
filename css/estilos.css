@@ -47,6 +47,7 @@ header
 section
 {
 	background: url(../img/background.jpg);
+	background-size:cover;
 	width: 95%;
 	margin: auto;
 	min-height: 600px;
