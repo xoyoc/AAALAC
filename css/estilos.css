@@ -41,6 +41,7 @@ body
 /* <========== Seccionde contedido ==========> */
 .contendido
 {
+	position: relative;
 	background-image: url(../img/background.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -50,15 +51,30 @@ body
 	min-height: 600px;
 	padding: 1em 0;
 }
-
-.contenedor
-{
-	background-color: white;
-	border: solid navy;
-	display: inline-block;
-	position: relative;
-}
-
+	.contenedor
+	{
+		background-color: white;
+		border: solid navy;
+		display: inline-block;
+		position: absolute;
+		bottom: .5rem;
+		right: .5rem;
+	}
+	.contenedor--login
+	{
+		background-color: navy;
+		text-align: center;
+		font-size: 1.5rem;
+	}
+		.contenedor--login a 
+		{
+			color:white;
+			text-decoration: none;
+		}
+	.contenedor__lista
+	{
+		list-style: none;
+	}
 /* <========== Seccionde pie de pagina ==========> */
 .pie-pagina
 {
