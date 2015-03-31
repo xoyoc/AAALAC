@@ -42,7 +42,9 @@ body
 .contendido
 {
 	position: relative;
-	background-image: url(../img/background.jpg);
+/* 	background-image: url(../img/background.jpg);
+	background-color: -webkit-linear-gradient(right, #FFFFFF 50%, #FFFFFF 100%); */
+	background: url(../img/background.jpg), -webkit-linear-gradient(right, #FFFFFF 50%, #FFFFFF 100%);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
