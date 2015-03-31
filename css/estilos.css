@@ -1,6 +1,9 @@
 body
 {
-	background: url(../img/fondo.jpg);
+	background-image: url(../img/fondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	font-size: 18px;
 }
 
@@ -79,7 +82,7 @@ body
 /* <========== Seccionde pie de pagina ==========> */
 .pie-pagina
 {
-	background: -webkit-linear-gradient(left, rgba(169, 169, 169, 0.5) 20%, rgba(255, 255, 255, 0.2) 100%);
+	background: -webkit-linear-gradient(left, rgba(0, 0, 255, 0.8) 10%, rgba(255, 255, 255, 0.2) 100%);
 	width: 95%;
 	margin: auto;
 	padding: .4rem 0;
@@ -89,7 +92,9 @@ body
 }
 	.pie-pagina__domicilio
 	{
+		color: white;
 		width: 20%;
+		text-align: center;
 	}
 	.pie-pagina__enlaces--link
 	{
