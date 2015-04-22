@@ -66,23 +66,22 @@ main
 	.contenedor--login
 		background-color azul
 		text-align center
-		font-size 1.5rem
-		.contenedor--login a 
+		font-size 2rem
+		.login
 			color white
 			text-decoration none
+			&:hover
+				background-color rgba(black,.4)
 	.contenedor__lista
 		list-style none
 		.contenedor__lista__items
 			margin-left 4rem
 /* <========== Seccionde pie de pagina ==========> */
 .pie-pagina
-	background: -webkit-linear-gradient(left, rgba(azul,0.8) 10%, rgba(white, 0.2) 100%)
+	background: -webkit-linear-gradient(left, rgba(azul,0.8) 5%, rgba(white, 0.2) 100%)
 	width 95%
 	margin auto
 	padding .4rem 0
-	display flex
-	justify-content space-around
-	align-items center
 	.pie-pagina__domicilio
 		color white
 		width 20%
@@ -90,5 +89,5 @@ main
 	.pie-pagina__enlaces--link
 		color black
 		text-decoration none
-.icono 
-	font-size 2em
+		.icono
+			font-size 4em
