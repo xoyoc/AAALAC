@@ -4,7 +4,9 @@
 
 verde_feo=#386C84
 azul=#032b68
-
+azulface=#3a5795
+azultw=#5babe5
+rojoggl=#db4437
 
 body
 	background-image url("../img/fondo.jpg")
@@ -19,11 +21,26 @@ main
 	width 100%
 	min-height 500px
 .fondo_trasparente
-	background-color rgba(black,.5)
+	background-color rgba(black,.3)
+	padding-top 1em
 .centrado_flex
 	display flex
 	justify-content space-around
 	align-items center
+.fondo_trasparente .two-thirds
+	padding-left 1em
+.icon-facebook2
+	color azulface
+	background-color white
+	border-radius 8px
+.icon-twitter2
+	color azultw
+	background-color white
+	border-radius 8px
+.icon-google-plus2
+	color rojoggl
+	background-color white
+	border-radius 8px
 /* <========== Seccionde encabezado ==========> */
 .encabezado
 	background white
@@ -80,14 +97,20 @@ main
 .pie-pagina
 	background: -webkit-linear-gradient(left, rgba(azul,0.8) 5%, rgba(white, 0.2) 100%)
 	width 95%
+	height 8rem
 	margin auto
 	padding .4rem 0
 	.pie-pagina__domicilio
 		color white
-		width 20%
+		width 30%
 		text-align center
 	.pie-pagina__enlaces--link
+		width 10rem
 		color black
 		text-decoration none
 		.icono
-			font-size 4em
+			font-size 3.5em
+		.icon-link
+			font-size 2rem
+		p 
+			display inline-block
