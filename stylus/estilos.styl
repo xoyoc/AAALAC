@@ -117,7 +117,7 @@ main
 /*<================ Diseño reponsivo medias ==============>*/
 
 /* Larger than mobile */
-@media (max-width: 580px)
+@media (max-width: 400px)
 	body
 		font-size 16px
 	.container
@@ -140,7 +140,6 @@ main
 					display block
 					width 100%
 			.encabezado__menu__lista--elementos
-				vertical-align center
 				height 3em
 				width auto
 				border none !important
@@ -148,10 +147,13 @@ main
 				.menu__lista--items
 					height 3em
 					padding 0
-	.contendido
-		width 100vw
+		.contenedor--login
+			display block
 	.pie-pagina
 		width 100vw
+	main
+		width 100vw
+		height auto
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}
 
