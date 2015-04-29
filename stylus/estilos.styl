@@ -55,7 +55,6 @@ main
 			margin-bottom 0
 			.encabezado__menu__lista--elementos
 				margin-bottom 0
-				height 100%
 				width 184px
 				border solid 1px white
 			.menu__lista--items
@@ -114,3 +113,43 @@ main
 			font-size 2rem
 		p 
 			display inline-block
+/*<================ Diseño reponsivo medias ==============>*/
+
+/* Larger than mobile */
+@media (max-width: 400px)
+	body
+		font-size 16px
+	.container
+		margin 0
+	.encabezado
+		width 100vw
+		.encabezado__menu
+			display block
+			width 50%
+			height 100vh
+			//left -100%
+			margin 0
+			position fixed
+			.encabezado__menu__lista
+					display block
+					width 100%
+			.encabezado__menu__lista--elementos
+				height 3em
+				width auto
+				border 1px transparent
+				border-bottom solid 1px white
+				.menu__lista--items
+					height 3em
+					padding 0
+	.contendido
+		width 100vw
+	.pie-pagina
+		width 100vw
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+/* Larger than tablet */
+@media (min-width: 750px) {}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {}
