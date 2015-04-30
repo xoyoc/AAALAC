@@ -116,7 +116,7 @@ main
 			display inline-block
 /*<================ Diseño reponsivo medias ==============>*/
 
-/* Larger than mobile */
+/* Diseño de mobiles */
 @media (max-width: 400px)
 	body
 		font-size 16px
@@ -151,9 +151,16 @@ main
 			display block
 	.pie-pagina
 		width 100vw
-	main
-		width 100vw
 		height auto
+		display block
+		.pie-pagina__domicilio
+			width 100%
+			margin 1em 0
+		.pie-pagina__redes-sociales
+			text-align center
+	.contendido
+		width 100vw
+		min-height auto
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}
 
