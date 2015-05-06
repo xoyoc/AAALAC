@@ -10,9 +10,30 @@ azultw=#5babe5
 rojoggl=#db4437
 
 body
+	animation 1s aparecion linear
+	//animation: aparecion ease-in-out 3s alternate
 	background-image url("../img/fondo.jpg")
+	transition all 2s ease-in
 main 
 	background-image url("../img/background.jpg")
+@keyframes aparecion
+	0%
+		opacity 0
+	100%
+		opacity 1
+@keyframes apizq
+	0%
+		opacity 0
+		left -100%
+	100%
+		opacity 1
+		left 0
+@keyframes dobleclick
+	40%
+		transform scale(1.1)
+	20%, 60%
+		transform scale(0.8)
+
 .fondo
 	background-repeat no-repeat
 	background-size cover
@@ -88,9 +109,11 @@ main
 				color white
 				height 100%
 				border-bottom solid 2px transparent
+				//animation: apizq ease-in-out 3s alternate
 			.menu__lista--items:hover
 				background-color rgba(black,.4)
 				border-bottom solid 2px red
+				animation 1s dobleclick 1
 /* <========== Seccionde contedido ==========> */
 .contendido
 	width 95%
