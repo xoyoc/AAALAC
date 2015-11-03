@@ -11,8 +11,11 @@
 	<link rel="apple-touch-icon" type="apple-touch-icon" href="apple-touch-aaalac.png" />
 	<!-- Referencia del autor -->
 	<link rel="autor" type="text/plain" href="humans.txt" />
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 	<!-- Enlace a las hojas de estilos -->
 	<link rel="stylesheet" href="css/estilos.css" />
+
 </head>
 <body class="fondo container">
 	<header class="encabezado fondo twelve.columns">
@@ -36,58 +39,63 @@
 	</header>
 	<main class="contendido fondo twelve.columns">
 		<div class="fondo2 fondo_trasparente">
-			<div class="servicios row">
-				<a href="#">
-					<div class="three columns">
-						<span class="icon-road"></span>
-						<p>MFI</p>			
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="encab_Gener">
+    					<h4 class="panel-title">
+    						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_Gener" aria-expanded="true" aria-controls="collapse_Gener">
+        						<span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Gereneral
+        					</a>
+      					</h4>
+   					</div>
+   					<div id="collapse_Gener" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="encab_Gener">
+	      				<div class="panel-body">
+	      					<div class="list-group">
+	      						<a class="list-group-item list-group-item-info" href="/domino/bases/fonatrac.nsf">Fondeo y atraque</a>
+	      						<a class="list-group-item list-group-item-info" href="/domino/bases/DGAs.nsf">DGA's</a>
+	      						<a class="list-group-item list-group-item-info" href="/domino/bases/Descarga.nsf">Comunicados</a>
+	      						<a class="list-group-item list-group-item-info" href="/domino/bases/Convenio.nsf">Convenios</a>
+	      					</div>			
+	      				</div>
 					</div>
-				</a>
-				<a href="#">
-					<div class="three columns">
-						<span class="icon-copy"></span>
-						<p>Previos</p>
+				</div>				
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="encab_Oper">
+    					<h4 class="panel-title">
+    						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_Oper" aria-expanded="false" aria-controls="collapse_Oper">
+        						<span class="glyphicon glyphicon-compressed" aria-hidden="true"></span> Operaciones
+        					</a>
+      					</h4>
+   					</div>
+   					<div id="collapse_Oper" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="encab_Oper">
+	      				<div class="panel-body">
+	      					<div class="list-group">
+	      						<a class="list-group-item list-group-item-info" href="/domino/bases/RepPrev.nsf">Reporte de previos</a>
+	      						<a class="list-group-item list-group-item-info" href="/domino/bases/ModuFerr.nsf">Modulacion por ferrocaril</a>
+	      						<a class="list-group-item list-group-item-info" href="/domino/bases/juntactec.nsf">Juntas Tecnicas</a>
+	      					</div>			
+	      				</div>
 					</div>
-				</a>
-				<a href="#">
-					<div class="three columns">
-						<span class="icon-clipboard"></span>
-						<p>DGA'S</p>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading" role="tab" id="encab_prev">
+    					<h4 class="panel-title">
+    						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse_Prev" aria-expanded="false" aria-controls="collapse_Prev">
+        						<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Prevalidador
+        					</a>
+      					</h4>
+   					</div>
+   					<div id="collapse_Prev" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="encab_prev">
+	      				<div class="panel-body">
+	      					<div class="list-group">
+	      						<a class="list-group-item list-group-item-info" href="http://web.prevalidadorcaaarem.org.mx">Prevalidador Web</a>
+	      						<a class="list-group-item list-group-item-info" href="#">Solcitud de JV Web -proximamente-</a>
+	      					</div>			
+	      				</div>
 					</div>
-				</a>
-				<a href="#">
-					<div class="three columns">
-						<span class="icon-shield"></span>
-						<p>PWEB</p>
-					</div>
-				</a>
+				</div>
 			</div>
-			<div class="servicios row">
-				<a href="#">
-					<div class="three columns">
-						<span class="icon-enter"></span>
-						<p>FONATRAC</p>
-					</div>
-				</a>
-				<a href="#">
-					<div class="three columns">
-						<span class="icon-unlocked"></span>
-						<p>LAP</p>
-					</div>
-				</a>
-				<a href="#">
-					<div class="three columns">
-						<span class="icon-paste"></span>
-						<p>Comunicados</p>
-					</div>
-				</a>
-				<a href="#">
-					<div class="three columns">
-						<span class="icon-user-tie"></span>
-						<p>Convenios</p>
-					</div>
-				</a>
-			</div>
+		</div>
 	</main>
 	<footer class="pie-pagina centrado_flex twelve.columns">
 		<address class="pie-pagina__domicilio">
@@ -107,5 +115,7 @@
 	</footer>
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="js/menu.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 </body>
 </html>

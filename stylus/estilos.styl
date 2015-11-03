@@ -2,6 +2,7 @@
 @import "icon.styl"
 @import "skeleton.styl"
 @import "nib"
+@import "animacion.styl"
 
 verde_feo=#386C84
 azul=#032b68
@@ -15,89 +16,7 @@ body
 	background-image url("../img/fondo.jpg")
 	transition all 2s ease-in
 main 
-	background-image url("../img/background.jpg")
-	
-/*ANIMACION DE DIFERENTES FORMAS*/
-
-.scrollimation.fade-in
-    opacity 0
-    transition opacity 0.4s ease-out
-    
-.scrollimation.fade-in.in
-    opacity 1
-
-.scrollimation.scale-in
-    opacity 0
-    transform scale(0.8)
-    transition transform .6s cubic-bezier(.17,.89,.67,1.57), opacity .6s ease-out
-
-.scrollimation.scale-in.in
-    opacity 1
-    transform scale(1)
-
-.scrollimation.fade-right
-    opacity 0
-    transform translateX(-30px)
-    transition transform .6s ease-in,opacity .8s ease-in
-
-.scrollimation.fade-right.in
-    opacity 1
-    transform translateX(0px)
-
-.scrollimation.fade-left
-    opacity 0
-    transform translateX(30px)
-    transition transform .6s ease-in,opacity .8s ease-in
-
-.scrollimation.fade-left.in
-    opacity 1
-    transform translateX(0px)
-
-.scrollimation.fade-up
-    opacity 0
-    transform translateY(20px)
-    transition transform .5s ease-in,opacity .8s ease-in
-
-.scrollimation.fade-up.in
-    opacity 1
-    transform translateY(0px)
-
-.touch .scrollimation.fade-in
-    opacity 1
-
-.touch .scrollimation.scale-in
-    opacity 1
-    transform scale(1)
-
-.touch .scrollimation.fade-right
-    opacity 1
-    transform translateX(0px)
-
-.touch .scrollimation.fade-left
-    opacity 1
-    transform translateX(0px)
-
-.touch .scrollimation.fade-up
-    opacity 1
-    transform translateY(0px)
-
-@keyframes aparecion
-	0%
-		opacity 0
-	100%
-		opacity 1
-@keyframes apizq
-	0%
-		opacity 0
-		left -100%
-	100%
-		opacity 1
-		left 0
-@keyframes dobleclick
-	40%
-		transform scale(1.1)
-	20%, 60%
-		transform scale(0.8)
+	background-image url("../img/background.jpg")	
 
 .fondo
 	background-repeat no-repeat
@@ -142,7 +61,7 @@ main
 	float right
 	font-size 3rem
 .servicios
-	font-size 2em
+	font-size 1.5em
 	margin 3em auto 0 auto
 	.three, .six
 		text-align center
@@ -151,6 +70,9 @@ main
 		color white
 		&:hover
 			color Khaki
+.panel-group
+	width 40%
+	margin 0 auto
 /* <========== Seccionde encabezado ==========> */
 .encabezado
 	background white
@@ -183,8 +105,11 @@ main
 	width 95%
 	margin auto
 	min-height 500px
+	.contendido__titulo
+		text-shadow 2px 2px white
 	.contendido__parrafo
 		color white
+		text-shadow 2px 2px black
 .contenedor
 	background-color white
 	border solid 6px verde_feo
