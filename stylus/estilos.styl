@@ -29,6 +29,8 @@ input, textarea
 	margin .5em 4em
 textarea 
 	height 10em
+address, p, ul  
+	margin 0
 .fondo
 	background-repeat no-repeat
 	background-size cover
@@ -98,7 +100,7 @@ textarea
 	font-size 0.8em
 	line-height 18px
 #submit
-	width 10%
+	width 15%
 	height 10%
 	margin-left 70%
 	background-color black
@@ -168,7 +170,7 @@ textarea
 .pie-pagina
 	background: linear-gradient(left, rgba(azul,0.8) 5%, rgba(white, 0.2) 100%)
 	width 95%
-	height 8rem
+	height 9rem
 	margin auto
 	padding .4rem 0
 	.pie-pagina__domicilio
@@ -257,7 +259,9 @@ textarea
 		width 90%
 		margin 1em
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media (min-width: 550px)
+	.container
+		width 95%
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
