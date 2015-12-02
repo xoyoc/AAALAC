@@ -65,7 +65,7 @@
 		google.load('feeds', '1'); 
 
 		function inicitilize(){
-			var feed new google.feeds.Feed("http://www.puertolazarocardenas.com.mx/plc25/component/ninjarsssyndicator/?feed_id=1&format=raw")
+			var feed = new google.feeds.Feed("http://www.puertolazarocardenas.com.mx/plc25/component/ninjarsssyndicator/?feed_id=1&format=raw")
 			feed.load(function(result){
 				if(!result.error){
 					var container = document.getElementById("rss02");
