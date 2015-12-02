@@ -74,19 +74,10 @@
 						var div = document.createElement("div");
 						div.appendChild(document.createTextNode(entry.title));
 						container.appendChild(div);
-					}else{
-						document.getElementById("rss02").innerHTML='Error del rss';
 					}
 				}
 			});
 		}
-/*		function OnLoad() {
-		  var feedControl = new google.feeds.FeedControl();
-		  feedControl.setNumEntries(3);
-		  feedControl.addFeed("http://www.puertolazarocardenas.com.mx/plc25/component/ninjarsssyndicator/?feed_id=1&format=raw", "Lázaro Cárdenas");
-		  feedControl.addFeed("http://archivo.eluniversal.com.mx/rss/universalmxm.xml", "Noticias");
-		  feedControl.draw(document.getElementById("rss02"));
-		}*/
 		google.setOnLoadCallback(inicitilize);
 	</script>
 	<!-- Latest compiled and minified JavaScript -->
