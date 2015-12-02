@@ -62,15 +62,30 @@
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 	<!-- Script para noticias de google sobre el puerto de lazaro cardenas -->
 	<script type="text/javascript">
-		google.load('feeds', '1');
-		function OnLoad() {
+		google.load('feeds', '1'); 
+
+		function inicitilize(){
+			var feed new google.feeds.Feed("http://www.puertolazarocardenas.com.mx/plc25/component/ninjarsssyndicator/?feed_id=1&format=raw")
+			feed.load(function(result){
+				if(!result.error){
+					var container = document.getElementById("rss02");
+					for (var i=0; i<result.feed.entries.lenght; i++){
+						var entry=result.feed.entres[i];
+						var div = document.createElement("div");
+						div.appendChild(document.createTextNode(entry.title));
+						container.appendChild(div);
+					}
+				}
+			});
+		}
+/*		function OnLoad() {
 		  var feedControl = new google.feeds.FeedControl();
 		  feedControl.setNumEntries(3);
 		  feedControl.addFeed("http://www.puertolazarocardenas.com.mx/plc25/component/ninjarsssyndicator/?feed_id=1&format=raw", "Lázaro Cárdenas");
 		  feedControl.addFeed("http://archivo.eluniversal.com.mx/rss/universalmxm.xml", "Noticias");
 		  feedControl.draw(document.getElementById("rss02"));
-		}
-		google.setOnLoadCallback(OnLoad);
+		}*/
+		google.setOnLoadCallback(inicitilize);
 	</script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
